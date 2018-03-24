@@ -65,4 +65,25 @@ hr {
     color: #999;
     font-weight: bolder;
     font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.sidebar{
+    background-color: #f85c37;
+    height: calc(100% - 81px);
+    position: absolute;
+    width: 300px;
+    top: 81px;
+    color: #999;
+}
+
+.sidebar-toggle {
+    width: 75px;
+    height: 30px;
+    margin: 0;
+    position: absolute;
+    top: 27px;
+    left: 17px;
+    color: #2d2d2d;
+
 }
