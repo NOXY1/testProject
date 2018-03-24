@@ -69,12 +69,7 @@ hr {
 }
 
 .sidebar{
-    background-color: #f85c37;
-    height: calc(100% - 81px);
-    position: absolute;
-    width: 300px;
-    top: 81px;
-    color: #999;
+    width: 0;
 }
 
 .sidebar-toggle {
@@ -86,4 +81,13 @@ hr {
     left: 17px;
     color: #2d2d2d;
 
+}
+
+.sidebar.active {
+    width: 300px;
+    background-color: #f85c37;
+    height: calc(100% - 81px);
+    position: absolute;
+    top: 81px;
+    color: #999;
 }
