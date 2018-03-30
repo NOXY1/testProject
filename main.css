@@ -117,4 +117,24 @@ hr {
 .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
+	padding-top: 15%;
+}
+
+.bg-1 { 
+    background-color: #B0E49A; /* Green */
+    color: #ffffff;
+}
+
+.bg-2 { 
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+  }
+.bg-3 { 
+    background-color: #ffffff; /* White */
+    color: #555555;
+}
+
+.bg-4 { 
+    background-color: #2f2f2f;
+    color: #ffffff;
 }
