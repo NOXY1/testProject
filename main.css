@@ -6,12 +6,14 @@ body {
     font-weight: 300;
     font-size: 16px;
     color: #555;
-    -webkit-font-smoothing: antialiased;
+    
+	-webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
-    margin-top: 30px;
+    
+	margin-top: 70px;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway";
     font-weight: 300;
     color: #333;
@@ -41,7 +43,7 @@ hr {
     height: 1px;
     border: 0;
     border-top: 1px solid #ccc;
-    margin: 1em;
+    margin: 1em 0;
     padding: 0;
 }
 
@@ -68,26 +70,51 @@ hr {
     letter-spacing: 1px;
 }
 
-.sidebar{
-    width: 0;
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
-.sidebar-toggle {
-    width: 75px;
-    height: 30px;
-    margin: 0;
-    position: absolute;
-    top: 27px;
-    left: 17px;
-    color: #2d2d2d;
-
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
 }
 
-.sidebar.active {
-    width: 300px;
-    background-color: #f85c37;
-    height: calc(100% - 81px);
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+
+.sidenav .closebtn {
     position: absolute;
-    top: 81px;
-    color: #999;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
