@@ -1,16 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Lato|Raleway");
 
+html, body {
+    height: 100%;
+}
+
 body {
     background-color: #f2f2f2;
-    font-family: "Lato";
+    font-family: "Lato", SansSerif;
     font-weight: 300;
     font-size: 16px;
     color: #555;
-    
-	-webkit-font-smoothing: antialiased;
-    -webkit-overflow-scrolling: touch;
-    
 	margin-top: 70px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -38,15 +40,6 @@ a:hover, a:focus {
     outline: 0;
 }
 
-/*hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}*/
-
 .navbar {
     font-weight: 800;
     font-size: 14px;
@@ -72,7 +65,7 @@ a:hover, a:focus {
 }
 
 .sidenav {
-    height: 100%; /* 100% Full-height */
+    height: 100%;
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
@@ -112,22 +105,41 @@ a>img {
     .sidenav a {font-size: 18px;}
 }
 
-#headerwrap {
-	background-color: #13F5A1;
+#main-section {
 	margin-top: -10px;
     padding-top: 20px;
 	text-align: center;
-	background-attachment: relative;
 	min-height: 600px;
 	width: 100%;
-	
+	height: calc(100% - 100px);
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 }
 
-#headerwrap h1 {
+#main-sidebar {
+    list-style: none;
+    padding-left: 0;
+}
+
+#main-sidebar li a {
+    width: 100%;
+    padding: 11px 0;
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#main-sidebar li a:hover {
+    background: #f4f3f3;
+}
+
+
+
+#main-section h1 {
 	margin-top: 150px;
 	color: white;
 	font-size: 70px;
@@ -135,7 +147,7 @@ a>img {
 	letter-spacing: 3px;
 }
 
-#f {
+#footer {
 	padding-bottom: 20px;
 	padding-top: 30px;
 	background-color: #CEE0CC;
@@ -149,4 +161,13 @@ a>img {
 
 #f span:hover {
 	color: #ff7878;
+}
+
+#main-graphic {
+    margin-top: 110px;
+}
+
+#main-graphic img {
+    margin: 30px;
+    width: calc(100% - 200px);
 }
