@@ -2,77 +2,80 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta="viewport" content="width=device-width, initial-scale=1.0">
+  <meta="viewport" content="width=device-width, initial-scale=1">
   <title>My test Project</title>
-  <script src="main.js"></script>
+  
   <link href="main.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
   </head>
   <body>
-  <div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">PROJECT<small> by Vasiliy Zotov</samall></a>
-      </div>
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Our Works</a></li>
-          <li><a href="#">Contacts</a></li>
-        </ul>
-      </div>
-	  <div id="mySidenav" class="sidenav">
-		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		  <h1>Here you can look at some diagrams</h1>
-		  <img src="1.jpg" class="img-responsive" alt="Diagram"><br>
-		  <img src="2.jpg" class="img-responsive" alt="Diagram"><br>
-		  <img src="3.jpg" class="img-responsive" alt="Diagram"><br>
-		  <img src="4.jpg" class="img-responsive" alt="Diagram"><br>
-		  
-      </div>
-	  <button type="button" class="btn btn-default btn-sm" onclick="openNav()">
-		<span class="glyphicon glyphicon-search"></span>Diagrams
-	  </button>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">PROJECT by Vasiliy Zotov</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Our Works</a></li>
+            <li><a href="#">Contacts</a></li>
+			
+          </ul>
+        </div>
+	    <div id="mySidenav" class="sidenav">
+		    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		    <a><img src="1.jpg" class="img-responsive" alt="Diagram">
+			  <a href="#" class="btn btn-default btn-sm">Diagram #1</a>
+			</a><br>
+		    <a><img src="2.jpg" class="img-responsive" alt="Diagram">
+			  <a href="#" class="btn btn-default btn-sm">Diagram #2</a>
+			</a><br>
+		    <a><img src="3.jpg" class="img-responsive" alt="Diagram">
+			  <a href="#" class="btn btn-default btn-sm">Diagram #3</a>
+			</a><br>
+		    <a><img src="4.jpg" class="img-responsive" alt="Diagram">
+			  <a href="#" class="btn btn-default btn-sm">Diagram #4</a>
+			</a><br>
+		</div>
+	    <button type="button" class="btn btn-default btn-sm" onclick="openNav()">
+		  <span class="glyphicon glyphicon-search"></span>Diagrams
+	    </button>
+	  </div>
 	</div>
-  </div>
-  <div class="container-fluid bg-1 text-center">
-  <h3>Who Am I?</h3>
-  <img src="5.jpg" class="img-circle" alt="My photo">
-  <h3>I'm a starting programmer</h3>
-  </div>
-  <div class="container-fluid bg-3 text-center">
-    <h3>Where To Find Me?</h3>
-    <div class="row">
-      <div class="col-sm-4">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <img src="6.jpg" class="img-responsive" style="width:100%" alt="Image">
-      </div>
-      <div class="col-sm-4">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <img src="7.jpg" class="img-responsive" style="width:100%" alt="Image">
-      </div>
-      <div class="col-sm-4"> 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <img src="8.jpg" class="img-responsive" style="width:100%" alt="Image">
-      </div>
-    </div>
-  </div>
- 
-  <footer class="container-fluid bg-4 text-center">
-    <p>Zotov Vasiliy Project<a href="https://www.google.com/intl/ru/gmail/about/">zotovvasek@gmail.com</a></p>
-  </footer>
+	<div id="headerwrap">
+	  <div class="container">
+	    <div class="row centered">
+		  <div class="col-lg-8 col-lg-offset-2">
+		    <h1>Main</h1>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<div id="f">
+	  <div class="container">
+	    <div class="row centered">
+		  <a href="#"><span class="glyphicon glyphicon-envelope"></span></a>
+		  <a href="#"><span class="glyphicon glyphicon-search"></span></a>
+		  <a href="#"><span class="glyphicon glyphicon-print"></span></a>
+		</div>
+	  </div> 
+	</div>
+    
+      
+  
   <script
       src="https://code.jquery.com/jquery-2.2.4.js"
       integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
       crossorigin="anonymous">
   </script>
+  <script src="main.js"></script>
   <script src="D:\JS Junior\libs\Bootstrap\js\bootstrap.min.js"></script>
   </body>
 </html>
