@@ -6,22 +6,39 @@ function closeNav() {
   document.getElementById("main-sidebar").style.width = "0";
 }
 
-/**
- * Render new image in main-graphic element according to image num parameter
- * @param num - image number. All images should be named as num.jpg and be placed at static/images folder
- */
-function changeGraphic(num) {
-  // TODO delete previous image before append next child
+function addClassActiveToButton(elem) {
+  var activeButtons = document.getElementsByClassName('active');
 
-  var graphic = document.getElementById('main-graphic');
-  var img = document.createElement('img');
-  img.setAttribute('src', 'static/images/'+num+'.jpg');
-  img.setAttribute('alt', 'main graphic');
+  for (var i = 0; i < activeButtons.length; i++) {
+    activeButtons[i].classList.remove('active');
+  }
+  elem.classList.add('active');
+}
 
-  graphic.appendChild(img)
+function changeGraphic(elem) {
+  var graphicElem = document.getElementById('main-graphic');
+
+  addClassActiveToButton(elem)
+
+  var graphicNumber = elem.getAttribute('number');
+
+  var img;
+  if(graphicElem.childNodes.length > 0) {
+    img = graphicElem.childNodes[0];
+    img.setAttribute('src', 'static/images/' + graphicNumber + '.jpg');
+  } else {
+    img = document.createElement('img');
+    img.setAttribute('src', 'static/images/'+ graphicNumber + '.jpg');
+    img.setAttribute('alt', 'main graphic');
+    graphicElem.appendChild(img);
+  }
 }
 
 window.onload = function() {
-  changeGraphic(1)
+  var mainSidebarElem = document.getElementById('main-sidebar');
+  var elem = mainSidebarElem.children[1].children[0];
+
+  changeGraphic(elem)
 };
+
 

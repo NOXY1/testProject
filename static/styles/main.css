@@ -35,7 +35,7 @@ a {
 }
 
 a:hover, a:focus {
-    color: #7b7b7b;
+    color: #137B08;
     text-decoration: none;
     outline: 0;
 }
@@ -53,9 +53,6 @@ a:hover, a:focus {
     border-color: #2d2d2d;
 }
 
-.navbar-inverse .navbar-nav > .active > a {
-    background-color: lightskyblue;
-}
 
 .navbar-inverse .navbar-brand {
     color: #999;
@@ -154,12 +151,12 @@ a>img {
 	min-height: 100px;
 }
 
-#f span {
+#footer span {
 	color: #bdbdbd;
 	font-size: 30px;
 }
 
-#f span:hover {
+#footer span:hover {
 	color: #ff7878;
 }
 
@@ -170,4 +167,8 @@ a>img {
 #main-graphic img {
     margin: 30px;
     width: calc(100% - 200px);
+}
+
+a.active {
+    background: gray;
 }
